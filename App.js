@@ -1,21 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>My First app native</Text>
-      
-      <StatusBar style="auto" />
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'blueviolet',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+import React from "react";
+import {MyProvider} from './src/context'
+import Index from "./index";
+import { registerRootComponent } from "expo";
+const provider = ()=>(
+    <MyProvider>
+        <Index></Index>
+    </MyProvider>
+)
+registerRootComponent(provider)
