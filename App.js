@@ -15,7 +15,7 @@ export default function App() {
       <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={StageOne} />
-        <Stack.Screen name="Homes" component={StageTwo} />
+        <Stack.Screen name="Detail" component={StageTwo} />
       </Stack.Navigator>
     </NavigationContainer>
  );  
