@@ -4,6 +4,7 @@ const StageTwo = ()=>{
 
     const linkedInURL = 'https://www.linkedin.com/in/jlsb/';
     const gitHubURL = 'https://github.com/JuanSBdev';
+    const portfolioURL = 'https://portajlsb.netlify.app/';
 
     const handleLinkedInLink = () => {
       Linking.openURL(linkedInURL).catch((err) =>
@@ -12,6 +13,11 @@ const StageTwo = ()=>{
     };
     const handleGitHubLink = () => {
       Linking.openURL(gitHubURL).catch((err) =>
+        console.error('Error al abrir el enlace: ', err)
+      );
+    };
+    const handlePortfolioLink = () => {
+      Linking.openURL(portfolioURL).catch((err) =>
         console.error('Error al abrir el enlace: ', err)
       );
     };
@@ -28,6 +34,13 @@ const StageTwo = ()=>{
                 
                 <Image  source={{ uri: 'https://cdn.pixabay.com/photo/2017/08/05/11/24/logo-2582757_1280.png' }}
                  style={styles.imgGit}
+                resizeMode="contain" />
+          
+            </TouchableOpacity>
+            <TouchableOpacity onPress={handlePortfolioLink}>
+                
+                <Image  source={{ uri: 'https://www.pngkit.com/png/full/111-1112902_portfolio-luggage-icon-white-png.png' }}
+                 style={styles.imgLinkedIn}
                 resizeMode="contain" />
           
             </TouchableOpacity>

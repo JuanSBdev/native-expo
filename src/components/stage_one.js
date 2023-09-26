@@ -22,22 +22,14 @@ const StageOne = ({navigation})=>{
             <Text style={styles.full}>
               FullStack Developer
             </Text>
-            <Button
+            {/* <Button
         title="Go to Details"
         onPress={() => navigation.navigate('Detail')}
-        />
+        /> */}
+            <StageTwo/>
         </View>
         <View style={styles.redesContainer}>
-            <StageTwo/>
-            {/* <Text style={styles.redes} >
-            https://www.linkedin.com/in/jlsb/
-            </Text>
-            <Text style={styles.redes}>
-            https://www.linkedin.com/in/jlsb/
-            </Text>
-            <Text style={styles.redes}>
-            https://www.linkedin.com/in/jlsb/
-            </Text> */}
+            
         </View>
 </ScrollView>
         </>
@@ -50,6 +42,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: 'black',
         color: 'white',
+        paddingTop: 100,
         paddingBottom: 100,
     },
     jlsb:{
