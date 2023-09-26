@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View, Button, Image, ScrollView } from 'react-native';
 import StageTwo from './stage_two';
+import Proyectos from './Proyectos';
 const StageOne = ({navigation})=>{
     return(
         <>
         <ScrollView>
 
-        <Text style={styles.jlsb}>
+        {/* <Text style={styles.jlsb}>
                 JLSB
-            </Text>
+            </Text> */}
         <View style={styles.view}>
 
             <Image
@@ -29,7 +30,8 @@ const StageOne = ({navigation})=>{
             <StageTwo/>
         </View>
         <View style={styles.redesContainer}>
-            
+            <Proyectos style={styles.redes}/>
+
         </View>
 </ScrollView>
         </>
@@ -42,8 +44,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: 'black',
         color: 'white',
-        paddingTop: 100,
-        paddingBottom: 100,
+        paddingTop: 120,
+        paddingBottom: 150,
     },
     jlsb:{
         backgroundColor: 'black',
@@ -73,7 +75,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row', // Establece la dirección a "row"
         flexWrap: 'nowrap',  // Evita el ajuste de línea
         alignItems: 'center',
-        backgroundColor: 'black'
+        backgroundColor: 'black',
+        color: 'white',
     },
     redes:{
         backgroundColor: 'black',
