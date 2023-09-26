@@ -81,7 +81,7 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.awesomeproject"
+    namespace 'com.juanlluvia.PortfolioMobile'
     defaultConfig {
         applicationId 'com.juanlluvia.PortfolioMobile'
         minSdkVersion rootProject.ext.minSdkVersion
